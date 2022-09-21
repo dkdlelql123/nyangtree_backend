@@ -1,0 +1,12 @@
+# DB접속을 위한 설정값
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tableTest?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
+    username: test
+    password: test
+    
+#spring.datasource.url=jdbc:mysql://localhost:3306/tableTest?useSSL=false&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull
+#spring.datasource.username=test
+#spring.datasource.password=test
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQLInnoDBDialect
