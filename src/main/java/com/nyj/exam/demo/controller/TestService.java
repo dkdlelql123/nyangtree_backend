@@ -14,10 +14,5 @@ public class TestService {
 	public String getHello() {
 		return "hello";
 	}
-	
-	@GetMapping("/api/member/list")
-	public String getMemberList() {
-//		List<Member> memberList = memberService.getMemberList();
-		return "hello";
-	}
+	 
 }
