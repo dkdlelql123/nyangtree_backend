@@ -15,6 +15,6 @@ public class BoardBackApplication {
 
 	@RequestMapping("/hi")
 	public String hi() {
-		return "hi~~~";
+		return "Hello World ~";
 	}
 }

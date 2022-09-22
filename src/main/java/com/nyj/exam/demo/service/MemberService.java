@@ -15,6 +15,7 @@ public class MemberService {
 	MemberRepository memberRepository;
 
 	public List<Member> getAllMember() {
+		System.out.println(memberRepository.findAll());
 		return memberRepository.findAll();
 	}
 }

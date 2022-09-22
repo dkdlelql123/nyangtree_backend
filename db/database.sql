@@ -1,3 +1,8 @@
+# 새 데이터베이스 생성
+CREATE DATABASE nyangtree;
+
+# nyangtree 사용하기
+USE `nyangtree`;
 
 # 회원테이블 생성
 CREATE TABLE `member`(

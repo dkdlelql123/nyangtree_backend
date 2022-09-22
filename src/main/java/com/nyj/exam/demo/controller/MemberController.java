@@ -1,5 +1,6 @@
 package com.nyj.exam.demo.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,13 @@ public class MemberController {
 	
 	@GetMapping("/api/member/list")
 	public List<Member> getAllMember() {
-		return memberService.getAllMember();
+		List<Member> members = new ArrayList<Member>();
+		memberService.getAllMember().forEach(e -> members.add(e));
+		
+		for(Member member : members) {
+			System.out.println(member);
+		}
+		
+		return members;
 	}
 }
