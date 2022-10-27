@@ -28,3 +28,5 @@ logging:
               BasicBinder: TRACE
 
 
+server:
+  port: 8002
