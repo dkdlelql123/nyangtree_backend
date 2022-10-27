@@ -6,4 +6,6 @@ import com.nyj.exam.demo.model.Member;
 
 public interface MemberRepository extends JpaRepository<Member, Integer>{
 
+	Member findByUserId(String userId);
+
 }
